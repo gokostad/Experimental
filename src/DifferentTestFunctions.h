@@ -1,0 +1,7 @@
+#ifndef DIFFERENTTESTFUNCTIONS_H_
+#define DIFFERENTTESTFUNCTIONS_H_
+
+void structureSize();
+
+
+#endif /* DIFFERENTTESTFUNCTIONS_H_ */
