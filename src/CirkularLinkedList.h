@@ -15,5 +15,6 @@ struct LLNode {
 
 bool isCircular(LLNode *ll);
 bool isCircular1(LLNode *ll);
+bool isCircular2(LLNode *ll);
 
 #endif /* CIRKULARLINKEDLIST_H_ */

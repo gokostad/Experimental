@@ -1,3 +1,6 @@
+/*
+ * Algorithms for finding is single linked list circular or acyclic
+ */
 #include <iostream>
 #include <forward_list>
 
@@ -55,6 +58,26 @@ bool isCircular1(LLNode *ll)
 		{
 			return true;
 		}
+	}
+	return false;
+}
+
+
+bool isCircular2(LLNode *ll)
+{
+	LLNode *pSlow, *pFast;
+
+	if (!ll)
+		return false;
+
+	pSlow = ll;
+	pFast = ll->next;
+	while (pFast && pFast->next)
+	{
+		if (pFast == pSlow || pFast->next == pSlow)
+			return true;
+		pSlow = pSlow->next;
+		pFast = pFast->next->next;
 	}
 	return false;
 }

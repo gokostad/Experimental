@@ -2,7 +2,9 @@
  * ReverseLinkedList.cpp
  *
  *  Created on: Feb 20, 2014
- *      Author: goran
+ *  Author: goran
+ *
+ *  Reversing single linked list
  */
 #include <iostream>
 using namespace std;
